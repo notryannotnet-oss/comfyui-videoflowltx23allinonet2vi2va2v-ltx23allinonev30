@@ -1,6 +1,19 @@
 # videoflowLTX23AllInOneT2VI2VA2V_ltx23AllInOneV30
 ComfyUI workflow Dockerized via [comfyui-wizard](https://comfy.getrunpod.io).
 Submission: https://comfy.getrunpod.io/dashboard/submissions/kd71rvc3q897yt85kj1d1ym0zs87vrde
+## Pull the prebuilt image
+
+We've already built and published this image on Docker Hub:
+
+```bash
+docker pull timpietruskyrunpod/comfyui-wizard:kd71rvc3q897yt85kj1d1ym0zs87vrde
+docker run --rm --gpus all -p 8188:8188 timpietruskyrunpod/comfyui-wizard:kd71rvc3q897yt85kj1d1ym0zs87vrde
+```
+
+Then open http://localhost:8188.
+
+---
+
 ## Build it yourself
 ```bash
 docker build -t my-comfy-workflow .
